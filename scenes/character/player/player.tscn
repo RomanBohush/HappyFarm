@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://csrq6omx4hr7u" path="res://scripts/state_machine/node_state_machine.gd" id="3_ucfoo"]
 [ext_resource type="Script" uid="uid://dh028ke2hhfiy" path="res://scenes/character/player/idle_state.gd" id="4_apd2u"]
 [ext_resource type="Script" uid="uid://u27kgkld5c37" path="res://scenes/character/player/walk_state.gd" id="5_apd2u"]
+[ext_resource type="Script" uid="uid://cu0kivnbyfnmm" path="res://scenes/character/player/chopping_state.gd" id="7_hixpj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ucfoo"]
 atlas = ExtResource("1_4ywt2")
@@ -176,7 +177,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_apd2u")
 }],
-"loop": true,
+"loop": false,
 "name": &"chopping_back",
 "speed": 3.0
 }, {
@@ -187,7 +188,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hixpj")
 }],
-"loop": true,
+"loop": false,
 "name": &"chopping_front",
 "speed": 3.0
 }, {
@@ -198,7 +199,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_i0j1t")
 }],
-"loop": true,
+"loop": false,
 "name": &"chopping_left",
 "speed": 3.0
 }, {
@@ -209,7 +210,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_in2if")
 }],
-"loop": true,
+"loop": false,
 "name": &"chopping_right",
 "speed": 3.0
 }, {
@@ -400,7 +401,7 @@ script = ExtResource("1_puv7k")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1949685370]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_fmlog")
-animation = &"walk_left"
+animation = &"chopping_right"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1667988561]
@@ -418,5 +419,10 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
 [node name="Walk" type="Node" parent="StateMachine" unique_id=204669038 node_paths=PackedStringArray("player", "animated_sprite_2d")]
 script = ExtResource("5_apd2u")
+player = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+
+[node name="Chopping" type="Node" parent="StateMachine" unique_id=1028768856 node_paths=PackedStringArray("player", "animated_sprite_2d")]
+script = ExtResource("7_hixpj")
 player = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
