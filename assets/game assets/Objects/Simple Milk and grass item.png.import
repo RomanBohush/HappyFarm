@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs1p7pihu6i5x"
-path="res://.godot/imported/Simple Milk and grass item.png-d56843d3094443ae9a2bb06ec1b39962.ctex"
+path="res://.godot/imported/Simple Milk and grass item.png-fd6936c15f5d61e6f437d72ae4eb2389.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game assets/Objects/Simple Milk and grass item.png"
-dest_files=["res://.godot/imported/Simple Milk and grass item.png-d56843d3094443ae9a2bb06ec1b39962.ctex"]
+source_file="res://assets/game assets/objects/Simple Milk and grass item.png"
+dest_files=["res://.godot/imported/Simple Milk and grass item.png-fd6936c15f5d61e6f437d72ae4eb2389.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djp3wr6l6ee6k"
-path="res://.godot/imported/Doors.png-dcfc91331d0b90822b2f362d158ea7d3.ctex"
+path="res://.godot/imported/Doors.png-0089d85cb07d9ee58536fcc4a5d195fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game assets/Tilesets/Doors.png"
-dest_files=["res://.godot/imported/Doors.png-dcfc91331d0b90822b2f362d158ea7d3.ctex"]
+source_file="res://assets/game assets/tilesets/Doors.png"
+dest_files=["res://.godot/imported/Doors.png-0089d85cb07d9ee58536fcc4a5d195fa.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wvprovw2qkx6"
-path="res://.godot/imported/Basic_tools_and_meterials.png-244008eff40bb53fbb05da78ea9d6e15.ctex"
+path="res://.godot/imported/Basic_tools_and_meterials.png-b78bf34fadea64beacc6480285680f0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game assets/Objects/Basic_tools_and_meterials.png"
-dest_files=["res://.godot/imported/Basic_tools_and_meterials.png-244008eff40bb53fbb05da78ea9d6e15.ctex"]
+source_file="res://assets/game assets/objects/Basic_tools_and_meterials.png"
+dest_files=["res://.godot/imported/Basic_tools_and_meterials.png-b78bf34fadea64beacc6480285680f0b.ctex"]
 
 [params]
 
