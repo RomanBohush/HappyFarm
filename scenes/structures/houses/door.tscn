@@ -92,6 +92,7 @@ size = Vector2(16, 16)
 size = Vector2(10, 33)
 
 [node name="Door" type="StaticBody2D" unique_id=282755020]
+collision_layer = 4
 script = ExtResource("1_1hqll")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1746293182]
