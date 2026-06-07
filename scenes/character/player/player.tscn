@@ -409,7 +409,7 @@ current_tool = 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1949685370]
 position = Vector2(-4, -7)
 sprite_frames = SubResource("SpriteFrames_fmlog")
-animation = &"walk_right"
+animation = &"idle_front"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1667988561]
@@ -448,6 +448,7 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
 [node name="HitComponent" parent="." unique_id=463984576 instance=ExtResource("10_68dt2")]
 position = Vector2(9, 0)
+current_tool = 1
 
 [node name="HitComponentCollisionShape2D" type="CollisionShape2D" parent="HitComponent" unique_id=739768092]
 position = Vector2(-4, 3)
