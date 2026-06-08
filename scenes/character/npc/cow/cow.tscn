@@ -1,34 +1,30 @@
-[gd_scene format=3 uid="uid://v5wrey3i7v5d"]
+[gd_scene format=3 uid="uid://decb0qluobbxo"]
 
-[ext_resource type="Texture2D" uid="uid://byq0ampqkobqv" path="res://assets/game assets/characters/Free Chicken Sprites.png" id="1_7kg8w"]
-[ext_resource type="Script" uid="uid://dndojt2vasykw" path="res://scenes/character/npc/chicken/chicken.gd" id="1_lkdtn"]
+[ext_resource type="Script" uid="uid://dl85noxqyncwt" path="res://scenes/character/npc/cow/cow.gd" id="1_1euv4"]
+[ext_resource type="Texture2D" uid="uid://ylivtl8kb0vr" path="res://assets/game assets/characters/Free Cow Sprites.png" id="2_lkdtn"]
 [ext_resource type="Script" uid="uid://csrq6omx4hr7u" path="res://scripts/state_machine/node_state_machine.gd" id="2_wqxgv"]
 [ext_resource type="Script" uid="uid://bt2ts8q3f57er" path="res://scenes/character/npc/chicken/idle_state.gd" id="3_lkdtn"]
 [ext_resource type="Script" uid="uid://csu61vdaac7e4" path="res://scenes/character/npc/chicken/walk_state.gd" id="4_wqxgv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6tns7"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(0, 0, 16, 16)
+atlas = ExtResource("2_lkdtn")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vm2wo"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(16, 0, 16, 16)
+atlas = ExtResource("2_lkdtn")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a1b0x"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(0, 16, 16, 16)
+atlas = ExtResource("2_lkdtn")
+region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wa0kp"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(16, 16, 16, 16)
+atlas = ExtResource("2_lkdtn")
+region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_spyhn"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(32, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o7qsq"]
-atlas = ExtResource("1_7kg8w")
-region = Rect2(48, 16, 16, 16)
+atlas = ExtResource("2_lkdtn")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wb80w"]
 animations = [{
@@ -38,6 +34,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vm2wo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a1b0x")
 }],
 "loop": true,
 "name": &"idle",
@@ -45,39 +44,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a1b0x")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_wa0kp")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_spyhn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o7qsq")
 }],
 "loop": true,
 "name": &"walk",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_5yel1"]
-radius = 4.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_o7qsq"]
+radius = 7.0
 
-[node name="Chicken" type="CharacterBody2D" unique_id=1916468821]
-script = ExtResource("1_lkdtn")
+[node name="Cow" type="CharacterBody2D" unique_id=1916468821]
+script = ExtResource("1_1euv4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=303470635]
-position = Vector2(0, -6)
+position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_wb80w")
-animation = &"walk"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=260610042]
-position = Vector2(0, -4)
-shape = SubResource("CircleShape2D_5yel1")
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_o7qsq")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1519205386]
+navigation_layers = 2
 avoidance_enabled = true
 radius = 5.0
 debug_enabled = true
