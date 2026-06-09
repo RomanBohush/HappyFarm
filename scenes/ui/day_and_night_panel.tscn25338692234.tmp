@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://ksh1r6mn4xqx"]
+
+[ext_resource type="Theme" uid="uid://b6mtnnr53i72y" path="res://scenes/ui/game_ui_theme.tres" id="1_fnqby"]
+[ext_resource type="Texture2D" uid="uid://cfejp3lsba21b" path="res://assets/ui/basic_ui_sprites.png" id="2_25t5k"]
+[ext_resource type="Script" uid="uid://c8cxcj41e7yb0" path="res://scenes/ui/day_and_night_panel.gd" id="2_xc6ft"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xc6ft"]
+atlas = ExtResource("2_25t5k")
+region = Rect2(261, 2, 7, 12)
+
+[node name="DayAndNightPanel" type="Control" unique_id=936473031]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_fnqby")
+script = ExtResource("2_xc6ft")
+
+[node name="DayPanel" type="PanelContainer" parent="." unique_id=1495409095]
+layout_mode = 0
+offset_left = -80.0
+offset_bottom = 26.0
+theme_type_variation = &"DayAndNightCounterPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="DayPanel" unique_id=1954234082]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="DayLabel" type="Label" parent="DayPanel/MarginContainer" unique_id=1366441238]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "DAY 0"
+
+[node name="TimePanel" type="PanelContainer" parent="." unique_id=764743078]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 28.0
+offset_bottom = 54.0
+theme_type_variation = &"DayAndNightCounterPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="TimePanel" unique_id=1945188952]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="TimeLabel" type="Label" parent="TimePanel/MarginContainer" unique_id=1414242740]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"DayAndNightLabel"
+text = "00:00"
+
+[node name="Control" type="Control" parent="." unique_id=12306639]
+anchors_preset = 0
+offset_left = -80.0
+offset_top = 56.0
+offset_bottom = 74.0
+
+[node name="NormalSpeedButton" type="Button" parent="Control" unique_id=602203465]
+layout_mode = 0
+offset_right = 26.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightbutton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/NormalSpeedButton" unique_id=132090259]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -6.0
+offset_right = 4.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[node name="FastSpeedButton" type="Button" parent="Control" unique_id=1090357594]
+layout_mode = 0
+offset_left = 27.0
+offset_right = 53.0
+offset_bottom = 18.0
+theme_type_variation = &"DayAndNightbutton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/FastSpeedButton" unique_id=502006144]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -6.0
+offset_right = 7.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/FastSpeedButton" unique_id=955949306]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -6.0
+offset_right = 3.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[node name="VeryFastSpeedButton2" type="Button" parent="Control" unique_id=1419066666]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 14.0
+offset_right = 40.0
+offset_bottom = 18.0
+grow_horizontal = 2
+theme_type_variation = &"DayAndNightbutton"
+
+[node name="TextureRect" type="TextureRect" parent="Control/VeryFastSpeedButton2" unique_id=87117514]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -6.0
+offset_right = 8.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/VeryFastSpeedButton2" unique_id=696340412]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -6.0
+offset_right = 5.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/VeryFastSpeedButton2" unique_id=183391938]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -6.0
+offset_right = 1.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_xc6ft")
+
+[connection signal="pressed" from="Control/NormalSpeedButton" to="." method="_on_normal_speed_button_pressed"]
+[connection signal="pressed" from="Control/FastSpeedButton" to="." method="_on_fast_speed_button_pressed"]
+[connection signal="pressed" from="Control/VeryFastSpeedButton2" to="." method="_on_very_fast_speed_button_2_pressed"]

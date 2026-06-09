@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" format=3 uid="uid://ckceh2fhq87mr"]
+
+[ext_resource type="FontFile" uid="uid://cypc2atrctvl" path="res://assets/ui/fonts/fonts.ttf" id="1_fuxlq"]
+
+[resource]
+base_font = ExtResource("1_fuxlq")
+spacing_glyph = -3
+spacing_top = 2
