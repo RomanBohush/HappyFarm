@@ -20,8 +20,10 @@ size = Vector2(20, 23)
 
 [node name="LargeTree" type="Sprite2D" unique_id=488598312]
 material = SubResource("ShaderMaterial_6vpey")
-position = Vector2(1, -14)
+position = Vector2(1, -4)
 texture = ExtResource("1_wjqkr")
+offset = Vector2(0, -8)
+flip_h = true
 region_enabled = true
 region_rect = Rect2(16, 0, 32, 32)
 script = ExtResource("2_wjqkr")
@@ -29,7 +31,7 @@ script = ExtResource("2_wjqkr")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1942743141]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1295509990]
-position = Vector2(0, 8)
+position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_xyb6m")
 
 [node name="DamageComponent" parent="." unique_id=732774609 instance=ExtResource("3_6vpey")]
@@ -39,6 +41,6 @@ max_damage = 5
 tool = 1
 
 [node name="HurtComponentCollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=502852467]
-position = Vector2(0, 1.5)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_g5iuu")
 debug_color = Color(0.8795284, 0.00037753762, 0.8258877, 0.41960785)
