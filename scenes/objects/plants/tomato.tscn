@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://br4c3fgricbpo" path="res://scenes/objects/plants/watering_particles.tscn" id="4_wpajg"]
 [ext_resource type="PackedScene" uid="uid://diryugk1xisrd" path="res://scenes/objects/plants/flowering_particles.tscn" id="5_aborc"]
 [ext_resource type="PackedScene" uid="uid://0245wn1tkxxn" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="6_8gvmx"]
+[ext_resource type="PackedScene" uid="uid://bucjycait0iu8" path="res://scenes/components/save_data_component.tscn" id="7_83wcf"]
+[ext_resource type="Resource" uid="uid://bp4qodfsk6kjf" path="res://resourses/scene_data_resource.tres" id="8_wpajg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ucl7"]
 size = Vector2(16, 7)
@@ -34,3 +36,6 @@ shape = SubResource("RectangleShape2D_5ucl7")
 [node name="FloweringParticles" parent="." unique_id=1498959773 instance=ExtResource("5_aborc")]
 
 [node name="GrowthCycleComponent" parent="." unique_id=165652361 instance=ExtResource("6_8gvmx")]
+
+[node name="SaveDataComponent" parent="." unique_id=644425553 instance=ExtResource("7_83wcf")]
+save_data_resource = ExtResource("8_wpajg")
