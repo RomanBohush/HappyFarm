@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://dla1xejau6rnu" path="res://Tilesets/game_tile_sets.tres" id="1_8mj5p"]
 [ext_resource type="PackedScene" uid="uid://bbifd12umfx8x" path="res://scenes/character/player/player.tscn" id="2_6bq6e"]
 [ext_resource type="PackedScene" uid="uid://ihr6fno0fgsw" path="res://scenes/ui/game_screen.tscn" id="3_mq6jr"]
-[ext_resource type="PackedScene" uid="uid://clyau1rxvpwki" path="res://scenes/ui/day_night_cycle_component.tscn" id="4_6bq6e"]
+[ext_resource type="PackedScene" uid="uid://clyau1rxvpwki" path="res://scenes/components/day_night_cycle_component.tscn" id="4_6bq6e"]
 
 [node name="TestSceneDayAndNightCycle" type="Node2D" unique_id=143540531]
 
