@@ -1,0 +1,11 @@
+~ start
+
+Bohdan: [[Hi|Hello|Howdy]], six - seven brother.
+Bohdan: Do you believe in six - seven?
+Bohdan: Take some seeds and run.
+- Take crop seeds
+	Y/N: nice
+do GameDialogueManager.action_give_crops_seeds()
+- No, I don't want them
+	Y/N: I'm not ready to grow my farm yet.
+=> END
