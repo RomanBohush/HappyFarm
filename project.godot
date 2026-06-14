@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="HappyFarm"
-run/main_scene="uid://drpauxf1fhyqc"
+run/main_scene="uid://qcmwu4ki5i0l"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

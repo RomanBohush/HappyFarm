@@ -69,6 +69,7 @@ collision_layer = 64
 script = ExtResource("1_lkdtn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=303470635]
+y_sort_enabled = true
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_wb80w")
 animation = &"walk"

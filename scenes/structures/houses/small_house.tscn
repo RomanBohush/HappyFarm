@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://c4dk8arovlsy8" path="res://Tilesets/house_tile_set.tres" id="1_2558p"]
 
-[node name="LargeHouse" type="Node2D" unique_id=1287035903]
+[node name="SmallHouse" type="Node2D" unique_id=1287035903]
 
 [node name="HouseTilemap" type="Node2D" parent="." unique_id=791094985]
 

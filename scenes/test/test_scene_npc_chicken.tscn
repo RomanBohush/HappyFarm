@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://dla1xejau6rnu" path="res://Tilesets/game_tile_sets.tres" id="1_ardmt"]
 [ext_resource type="PackedScene" uid="uid://bbifd12umfx8x" path="res://scenes/character/player/player.tscn" id="2_6nbhr"]
-[ext_resource type="PackedScene" uid="uid://decb0qluobbxo" path="res://scenes/character/npc/cow/cow.tscn" id="3_6nbhr"]
+[ext_resource type="PackedScene" uid="uid://v5wrey3i7v5d" path="res://scenes/character/npc/chicken/chicken.tscn" id="3_6nbhr"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_6nbhr"]
 vertices = PackedVector2Array(367.79688, 123.88281, 444.72656, 199.11719, 349.39844, 234.54688, 243.45313, 208.53125, 222.03125, 152.84375, 240.70313, 120.171875)
@@ -49,13 +49,9 @@ position = Vector2(-17, -8)
 navigation_polygon = SubResource("NavigationPolygon_6nbhr")
 
 [node name="Chicken" parent="Chickens" unique_id=1916468821 instance=ExtResource("3_6nbhr")]
-position = Vector2(251, 188)
 
-[node name="Chicken2" parent="Chickens" unique_id=1564741339 instance=ExtResource("3_6nbhr")]
-position = Vector2(228, 148)
+[node name="Chicken2" parent="Chickens" unique_id=1410063138 instance=ExtResource("3_6nbhr")]
 
-[node name="Chicken3" parent="Chickens" unique_id=751952965 instance=ExtResource("3_6nbhr")]
-position = Vector2(353, 149)
+[node name="Chicken3" parent="Chickens" unique_id=234222871 instance=ExtResource("3_6nbhr")]
 
-[node name="Chicken4" parent="Chickens" unique_id=2049037929 instance=ExtResource("3_6nbhr")]
-position = Vector2(334, 197)
+[node name="Chicken4" parent="Chickens" unique_id=1396786106 instance=ExtResource("3_6nbhr")]

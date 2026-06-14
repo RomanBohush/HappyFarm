@@ -49,8 +49,8 @@ position = Vector2(-17, -8)
 navigation_polygon = SubResource("NavigationPolygon_6nbhr")
 navigation_layers = 2
 
-[node name="Cow" parent="." unique_id=1916468821 instance=ExtResource("3_txxqc")]
+[node name="Cow" parent="Cows" unique_id=1916468821 instance=ExtResource("3_txxqc")]
 position = Vector2(240, 139)
 
-[node name="Cow2" parent="." unique_id=2091409400 instance=ExtResource("3_txxqc")]
+[node name="Cow2" parent="Cows" unique_id=2091409400 instance=ExtResource("3_txxqc")]
 position = Vector2(325, 143)

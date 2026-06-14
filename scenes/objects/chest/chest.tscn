@@ -119,7 +119,6 @@ debug_color = Color(0, 0.5643369, 0.87134403, 0.41960785)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2033455980]
 sprite_frames = SubResource("SpriteFrames_8nvhs")
-animation = &"chest_close"
 autoplay = "default"
 
 [node name="InteractableComponent" parent="." unique_id=2129486329 instance=ExtResource("2_8pawo")]
