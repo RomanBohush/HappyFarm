@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://b38677usdywha"]
+
+[ext_resource type="Script" uid="uid://dmvolmt6vp88p" path="res://scenes/game_menu_screen.gd" id="1_3ffun"]
+[ext_resource type="Theme" uid="uid://b6mtnnr53i72y" path="res://scenes/ui/game_ui_theme.tres" id="1_dkf86"]
+[ext_resource type="PackedScene" uid="uid://b4qffl6xodyfa" path="res://scenes/ui/game_menu_screen_background.tscn" id="1_t26fm"]
+[ext_resource type="PackedScene" uid="uid://btcp8y2kyh02w" path="res://scenes/components/mouse_cursor_component.tscn" id="2_w6diq"]
+[ext_resource type="Texture2D" uid="uid://bhrpd0alf3kkv" path="res://assets/ui/mouse_icom.png" id="3_icf56"]
+
+[node name="GameMenuScreen" type="CanvasLayer" unique_id=281836743]
+script = ExtResource("1_3ffun")
+
+[node name="MouseCursorComponent" parent="." unique_id=749065703 instance=ExtResource("2_w6diq")]
+cursor_component_texture = ExtResource("3_icf56")
+
+[node name="GameMenuBackgroundScreen" parent="." unique_id=143540531 instance=ExtResource("1_t26fm")]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1798545339]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dkf86")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=378846896]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=1496344793]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.6666667, 0.4745098, 0.34901962, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0)
+theme_override_constants/line_spacing = 3
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 54
+text = "Happy Farm"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1457254033]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="StartGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1153176994]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "START"
+
+[node name="SaveGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=236052183]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "SAVE"
+
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=965961413]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "EXIT"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButton" to="." method="_on_save_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ExitGameButton" to="." method="_on_exit_game_button_pressed"]
