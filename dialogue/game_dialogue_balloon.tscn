@@ -4,6 +4,7 @@
 [ext_resource type="Theme" uid="uid://b7xjgnqssw11e" path="res://dialogue/dialogue_ballon_theme.tres" id="2_sjhsj"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_xkmgq"]
 [ext_resource type="PackedScene" uid="uid://87i6td21tjk" path="res://scenes/ui/emotes_panel.tscn" id="4_xkmgq"]
+[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="5_vwqec"]
 
 [node name="GameDialogueBalloon" type="CanvasLayer" unique_id=1508693039]
 layer = 100
@@ -92,9 +93,11 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
+script = ExtResource("5_vwqec")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu" unique_id=1493045465]
 layout_mode = 2
 text = "Response example"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
+[connection signal="response_selected" from="Balloon/Responses/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

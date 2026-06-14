@@ -1,4 +1,6 @@
-class_name BaseGameDialogueBalloon extends CanvasLayer
+class_name BaseGameDialogueBalloon 
+extends CanvasLayer
+
 ## A basic dialogue balloon for use with Dialogue Manager.
 
 ## The action to use for advancing the dialogue
@@ -18,9 +20,6 @@ var is_waiting_for_input: bool = false
 
 ## See if we are running a long mutation and should hide the balloon
 var will_hide_balloon: bool = false
-
-## A dictionary to store any ephemeral variables
-var locals: Dictionary = {}
 
 var _locale: String = TranslationServer.get_locale()
 
@@ -114,8 +113,6 @@ func _notification(what: int) -> void:
 
 ## Start some dialogue
 func start(dialogue_resource: DialogueResource, title: String, extra_game_states: Array = []) -> void:
-	if not is_node_ready():
-		await ready
 	temporary_game_states =  [self] + extra_game_states
 	is_waiting_for_input = false
 	resource = dialogue_resource
