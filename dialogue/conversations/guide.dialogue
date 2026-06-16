@@ -1,12 +1,15 @@
 ~ start
 
-Bohdan: [[Hi|Hello|Howdy]], six - seven brother.
-Bohdan: Do you believe in six - seven?
-Bohdan: Take some seeds and run.
+Stranger: [[Hi|Hello|Howdy]], I can't believe you've finally come back!
+Artem: Sorry... do I know you?
+Stranger: Haha, of course you do! I'm Timmy, your cousin.
+Artem: Timmy...? Sorry, it's been so many years. I barely remember anyone here.
+Timmy: Don't worry about it! Your house is just to the right of mine. Stop by if you need anything. Welcome home!
+Timmy: I see you don't have any tools with you. Here, let me lend you mine.
 - Take crop seeds
-	Y/N: nice
+	Artem: Thank you, Timmy. I really appreciate it.
 	do GameDialogueManager.action_give_crops_seeds()
 	=> END
 - No, I don't want them
-	Y/N: I'm not ready to grow my farm yet.
+	Artem: I'm not ready to grow my farm yet.
 	=> END

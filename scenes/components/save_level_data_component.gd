@@ -10,6 +10,7 @@ var game_data_resource: SaveGameDataResource
 func _ready() -> void:
 	add_to_group("save_level_data_component")
 	level_scene_name = get_parent().name
+	call_deferred("load_game")
 
 
 func save_node_data() -> void:

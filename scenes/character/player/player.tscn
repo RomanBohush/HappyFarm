@@ -413,7 +413,7 @@ autoplay = "idle_front"
 offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1667988561]
-position = Vector2(0, -3)
+position = Vector2(0, -2)
 shape = SubResource("CapsuleShape2D_hkcfm")
 
 [node name="StateMachine" type="Node" parent="." unique_id=820214082 node_paths=PackedStringArray("initial_node_state")]
@@ -448,6 +448,7 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 hit_component_collision_shape = NodePath("../../HitComponent/HitComponentCollisionShape2D")
 
 [node name="HitComponent" parent="." unique_id=463984576 instance=ExtResource("10_68dt2")]
+visible = false
 position = Vector2(9, 0)
 
 [node name="HitComponentCollisionShape2D" type="CollisionShape2D" parent="HitComponent" unique_id=739768092]

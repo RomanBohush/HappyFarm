@@ -11,7 +11,7 @@
 [ext_resource type="Resource" uid="uid://7wchqh6mt6j2" path="res://resourses/tilemap_layer_data_resource.tres" id="6_tfpct"]
 [ext_resource type="PackedScene" uid="uid://bbifd12umfx8x" path="res://scenes/character/player/player.tscn" id="7_tfpct"]
 [ext_resource type="PackedScene" uid="uid://ihr6fno0fgsw" path="res://scenes/ui/game_screen.tscn" id="8_u1oq4"]
-[ext_resource type="PackedScene" uid="uid://crjy8sf3qe6cb" path="res://scenes/components/save_lavel_data_component.tscn" id="9_boxik"]
+[ext_resource type="PackedScene" uid="uid://crjy8sf3qe6cb" path="res://scenes/components/save_level_data_component.tscn" id="9_boxik"]
 [ext_resource type="PackedScene" uid="uid://ctvjw7p7na7mh" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="11_g1373"]
 
 [node name="TestSceneCropsField" type="Node2D" unique_id=143540531]
